@@ -30,8 +30,8 @@ import { trigger, style, transition, animate, keyframes, query, stagger } from '
 })
 export class HomeComponent implements OnInit {
 
-  itemCount: number = 4;
-  goalText: string = 'my first life goal';
+  itemCount = 4;
+  goalText = 'my first life goal';
   goals: string[] = ['My first life goal', 'I want to climb a mountain', 'Go ice skiing'];
 
   constructor() { }
