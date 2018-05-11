@@ -1,24 +1,17 @@
-<div fxLayout="row" fxLayout.sm="column" fxFlexFill >
+<div fxLayout="row" fxLayoutAlign="space-evenly none" fxLayout.sm="column" fxLayout.xs="column" class="col-container">
   <div fxFlex="50" class="col">
-    <div class="color-dark">
-      <p>Add a bucket list item</p>
-    </div>
+    <div class="color-dark"></div>
     <div class="color-light">
-      <p>Use this form below to add a new bucket list goal. What do you want to accomplish in your life?</p>
-      <form>
-        <input type="text" class="txt" name="item" placeholder="Life goal.." [(ngModel)]="goalText">
-        <input type="submit" class="btn" value="Add Item" (click)="addItem()">
-      </form>
-    </div>
-  </div>
-  <div fxFlex="50" class="col">
-    <div class="color-dark">
-      <p>Your bucket list ({{ itemCount }})</p>
-    </div>
-    <div class="color-light" [@goals]="goals.length">
-      <p class="life-container" *ngFor="let goal of goals; let i = index" (click)="removeItem(i)">
-        {{ goal }}
+      <span class="title">Hello</span>
+      <p class="pres-paragraph">
+        I’m <b>Félix Boisselier</b>, a design engineer from the Universtity of Technology of Compiègne currently working at BeAM (Strabourg, FR) and starting a PhD in Additive Manufacturing and Artificial Intelligence in September.
+      </p>
+      <p class="pres-paragraph">
+          Feel free to take a look at my work !
       </p>
     </div>
+  </div>
+  <div class="col">
+      <img src="assets/img/profilepic.jpg">
   </div>
 </div>
